@@ -1,0 +1,405 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.buttons{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Header styles */
+header {
+    background-color: #B7E6F9;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 5px 0px 25px 55px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    background-image: url('/Assets/image\ 2.png');
+    background-size: cover;
+    background-position: center;;
+    padding: 60px 0;
+    color: #000;
+    border-bottom: 1px solid black;
+}
+.hero .container{
+    margin-left: 680px;
+}
+
+.building-img{
+position: absolute;
+width: 750px;
+left: 0px;
+top: 40px;
+}
+.building-img img{
+    height: 500px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services section styles */
+.services {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+
+.services h2 {
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+/* Sell or rent section styles */
+.sell-rent {
+    background-color: #fff;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+}
+.sell-rent .container{
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 15px;
+}
+.sell-rent .sell-rent-content{
+    width: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sell-rent-image img{
+    object-fit: contain;
+    position: relative;
+    top: 7px;
+}
+
+
+
+/* Smart Home Buying section styles */
+.smart-home-buying {
+    padding: 20px;
+    margin: 40px 0;
+    background-color: #fff;
+}
+.smart-home-buying .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.smart-home-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.smart-home-item {  
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e6f3ff;
+}
+.smart-home-item img{
+    object-fit: contain;
+}
+
+/* Book Your Dream Home section styles */
+.book-dream-home {
+    padding: 20px;
+    margin: 40px 0;
+    text-align: center;
+    height: 150px;
+}
+.book-dream-home .container h2{
+    color: #ff6600;
+    padding-top: 10px;
+}
+.book-dream-home .container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.book-dream-home .container{
+    display: flex;
+    background-color: #e6f3ff;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+/* Offers section styles */
+.offers {
+    margin: 40px 0;
+}
+.offers .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+.offer-grid {
+   display: flex;
+}
+
+.offer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    background-image: url(Assets/Subtract.png);
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+}
+.offers .container .small-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: 900px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.offer-item .upper{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center ;
+    gap: 30px;
+    text-align: start;
+}
+
+.offer-item .upper h2{
+    font-size: 14px;
+}
+
+.offer-item .upper p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.offer-item .lower{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.offer-item .lower p{
+    font-size: 12px;
+    width: 170px;
+    text-align: start;
+}
+
+.offer-item .lower .low-left{
+    padding: 5px;
+    background-color: #B7E6F9;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+} 
+.offer-item .lower .low-right{
+    background-color: #B7E6F9;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+} 
+
+
+
+/* Projects section styles */
+.projects {
+    margin: 40px 0;
+}
+.projects .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Newly Launched Projects section styles */
+.new-projects {
+    margin: 40px 0;
+}
+.new-projects .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.new-project-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.new-project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.new-project-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Popular Builders section styles */
+.popular-builders {
+    margin: 40px 0;
+}
+.popular-builders .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.builder-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.builder-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.builder-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.cta .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.cta .container h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e6f3ff;
+    color: #ff6600;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin-top: 40px;
+    
+}
+
+
+.footer-left {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
